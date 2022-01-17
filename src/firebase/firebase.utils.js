@@ -12,6 +12,8 @@ const config = {
 	measurementId: "G-KM0LCFD2B5"
 };
 
+firebase.initializeApp(config);
+
 // if you're experiencng issues after Feb. 8, 2022, go to
 // https://console.firebase.google.com/u/0/project/crwn-db-2b637/firestore/rules and or update the
 // request.time rule.
@@ -38,8 +40,6 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
 
 	return userRef;
 };
-
-firebase.initializeApp(config);
 
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();
