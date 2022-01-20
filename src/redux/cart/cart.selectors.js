@@ -1,6 +1,5 @@
 // lecture 135. Reselect Library
 import { createSelector } from "reselect";
-import { ExpirationPlugin } from "workbox-expiration";
 
 const selectCart = state => state.cart;
 
